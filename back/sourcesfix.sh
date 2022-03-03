@@ -27,7 +27,7 @@ clear
 if [[ $1 == "" ]]
 then
 figlet -p -f slant < /root/name | lolcat
-echo -e "\033[1;37m      【     ★ ChumoGH Packet 2020 ★     】\033[0m"
+echo -e "\033[1;37m      【     ★ Phreaker56 Packets 2022 ★     】\033[0m"
 echo -e "[\033[1;31m-\033[1;33m]\033[1;30m ───────────────── /// ─────────────────\033[1;33m"
 echo -e "\033[1;37m       ChumoGH-ADM @ FIX SOURCES \033[0m"
 echo -e "[\033[1;31m-\033[1;33m]\033[1;31m ───────────────── /// ─────────────────\033[1;33m"
