@@ -23,9 +23,9 @@ echo -e " \033[1;33m[\033[1;31m####################\033[1;33m] - \033[1;32m100%\
 sleep 1s
 }
 act_hora () {
-echo "America/Chihuahua"
-echo "America/Chihuahua" > /etc/timezone
-ln -fs /usr/share/zoneinfo/America/Chihuahua /etc/localtime > /dev/null 2>&1
+echo "America/Managua"
+echo "America/Managua" > /etc/timezone
+ln -fs /usr/share/zoneinfo/America/Managua /etc/localtime > /dev/null 2>&1
 dpkg-reconfigure --frontend noninteractive tzdata > /dev/null 2>&1 && echo -e "\033[1;32m [OK]" || echo -e "\033[1;31m [FAIL]"
 echo -e "$barra"
 menu
@@ -105,10 +105,10 @@ menu
 shadowe_fun () {
 #source /etc/adm-lite/cabelcaho
 unset opx
-echo -e " \033[1;36m ZONA HORARIO \033[1;32m[ChumoGH-ADM]"
+echo -e " \033[1;36m ZONA HORARIO \033[1;32m[PHRK56-ADM]"
 echo -e "$barra"
 while true; do
-echo -e "${cor[4]} [1] > ${cor[5]}ACTUALIZAR HORARIO Local CHICHUAHUA"
+echo -e "${cor[4]} [1] > ${cor[5]}ACTUALIZAR HORARIO Local MANAGUA"
 echo -e "${cor[4]} [2] > ${cor[5]}ACTUALIZAR HORARIO Local MEXICO"
 echo -e "${cor[4]} [3] > ${cor[5]}ACTUALIZAR HORARIO Local Argentina"
 echo -e "${cor[4]} [4] > ${cor[5]}ACTUALIZAR HORARIO Local AMERICA/SANTIAGO"
