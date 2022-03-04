@@ -2,7 +2,7 @@
 BARRA="\033[1;36m-----------------------------------------------------\033[0m"
 IVAR="/etc/http-instas"
 SCPT_DIR="/etc/SCRIPT"
-SCPresq="aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL0NodW1vR0gvQ2h1bW9HSC1TY3JpcHQvbWFzdGVyL0JPVC9nZXJhZG9y"
+SCPresq="aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL3BocmVha2VyNTYvQ2h1bW9HSC1TY3JpcHQvbWFzdGVyL0JPVC9nZXJhZG9y"
 SUB_DOM='base64 -d'
 rm $(pwd)/$0
 
@@ -79,29 +79,26 @@ read inst
 }
 
 ofus () {
-unset server
-server=$(echo ${txt_ofuscatw}|cut -d':' -f1)
 unset txtofus
 number=$(expr length $1)
 for((i=1; i<$number+1; i++)); do
 txt[$i]=$(echo "$1" | cut -b $i)
 case ${txt[$i]} in
-".")txt[$i]="*";;
-"*")txt[$i]=".";;
+".")txt[$i]="x";;
+"x")txt[$i]=".";;
 "1")txt[$i]="@";;
 "@")txt[$i]="1";;
 "2")txt[$i]="?";;
 "?")txt[$i]="2";;
-"4")txt[$i]="%";;
-"%")txt[$i]="4";;
-"-")txt[$i]="K";;
-"K")txt[$i]="-";;
+"4")txt[$i]="0";;
+"0")txt[$i]="4";;
+"/")txt[$i]="K";;
+"K")txt[$i]="/";;
 esac
 txtofus+="${txt[$i]}"
 done
 echo "$txtofus" | rev
 }
-
 veryfy_fun () {
 [[ ! -d ${IVAR} ]] && touch ${IVAR}
 [[ ! -d ${SCPT_DIR} ]] && mkdir ${SCPT_DIR}
@@ -123,11 +120,11 @@ echo "$IP" > /usr/bin/vendor_code
 }
 
 function_verify () {
-  permited=$(curl -sSL "https://raw.githubusercontent.com/ChumoGH/VPSbot/main/TeleBotGen/Control/Control-Bot")
+  permited=$(curl -sSL "https://raw.githubusercontent.com/phreaker56/VPSbot/main/TeleBotGen/Control/Control-Bot")
   [[ $(echo $permited|grep "${IP}") = "" ]] && {
   echo -e "\n\n\n\033[1;31m====================================================="
   echo -e "\033[1;31m       ¡LA IP $(wget -qO- ipv4.icanhazip.com) NO ESTA AUTORIZADA!"
-  echo -e "\033[1;31m                CONTACTE A @ChumoGH"
+  echo -e "\033[1;31m                CONTACTE A @phreaker56"
   echo -e "\033[1;31m=====================================================\n\n\n"
   [[ -d /etc/SCRIPT ]] && rm -rf /etc/SCRIPT
   exit 1
@@ -165,7 +162,7 @@ echo "$Key" > $IVAR
 cp /bin/http-server.sh /etc/SCRIPT
 mv /etc/SCRIPT/http-server.sh /etc/SCRIPT/http-server.py
 chmod +x /etc/SCRIPT/http-server.py
-wget https://raw.githubusercontent.com/ChumoGH/ChumoGH-Script/master/BOT/gerador/gerar.sh &>/dev/null
+wget https://raw.githubusercontent.com/phreaker56/ChumoGH-Script/master/BOT/gerador/gerar.sh &>/dev/null
 mv gerar.sh /etc/SCRIPT
 chmod +x /etc/SCRIPT/gerar.sh
 cd /etc/SCRIPT/
