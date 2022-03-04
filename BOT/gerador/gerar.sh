@@ -84,21 +84,19 @@ echo "$MEU_IP2" > /etc/MEUIPADM
 }
 
 ofus () {
-unset server
-server=$(echo ${txt_ofuscatw}|cut -d':' -f1)
 unset txtofus
 number=$(expr length $1)
 for((i=1; i<$number+1; i++)); do
 txt[$i]=$(echo "$1" | cut -b $i)
 case ${txt[$i]} in
-".")txt[$i]="+";;
-"+")txt[$i]=".";;
+".")txt[$i]="x";;
+"x")txt[$i]=".";;
 "1")txt[$i]="@";;
 "@")txt[$i]="1";;
 "2")txt[$i]="?";;
 "?")txt[$i]="2";;
-"3")txt[$i]="%";;
-"%")txt[$i]="3";;
+"4")txt[$i]="0";;
+"0")txt[$i]="4";;
 "/")txt[$i]="K";;
 "K")txt[$i]="/";;
 esac
@@ -106,8 +104,6 @@ txtofus+="${txt[$i]}"
 done
 echo "$txtofus" | rev
 }
-
-
 SCPT_DIR="/etc/SCRIPT"
 [[ ! -e ${SCPT_DIR} ]] && mkdir ${SCPT_DIR}
 INSTA_ARQUIVOS="ADMVPS.zip"
@@ -522,12 +518,12 @@ msg -bar
 echo -e "\033[1;37m ACTUALIZANDO......"
 msg -bar
 rm -rf $SCPT_DIR &>/dev/null
-wget https://raw.githubusercontent.com/ChumoGH/ChumoGH-Script/master/BOT/instgerador.sh &> /dev/null; chmod 777 instgerador.sh* && ./instgerador.sh*
+wget https://raw.githubusercontent.com/phreaker56/ChumoGH-Script/master/BOT/instgerador.sh &> /dev/null; chmod 777 instgerador.sh* && ./instgerador.sh*
 sleep 3
 }
 
 pass_admin () {
-permited=$(ofus $(curl -sSL "https://raw.githubusercontent.com/ChumoGH/ChumoGH-Script/master/BOT/passw"))
+permited=$(ofus $(curl -sSL "https://raw.githubusercontent.com/phreaker56/ChumoGH-Script/master/BOT/passw"))
 read -p "ESCRIBA SU CONTRASEÑA: " passw
 if [[ $permited = $passw ]]; then
 	clear
@@ -535,7 +531,7 @@ if [[ $permited = $passw ]]; then
 	echo -e "\033[1;37m ACTUALIZANDO......"
 	msg -bar
 	sleep 2
-	wget -O $HOME/instger.sh https://raw.githubusercontent.com/ChumoGH/ChumoGH-Script/master/BOT/instgerador.sh &>/dev/null
+	wget -O $HOME/instger.sh https://raw.githubusercontent.com/phreaker56/ChumoGH-Script/master/BOT/instgerador.sh &>/dev/null
 	chmod +x $HOME/instger.sh
 	cd $HOME
 	rm -rf $SCPT_DIR &>/dev/null
@@ -558,22 +554,22 @@ if [[ $1 = 1 ]]; then
 msg -bar
 echo -e "\033[7;49;35m             LINKS INSTALL SCRIPT ChumoGH             "
 msg -bar
-echo -e "\033[1;37mwget -q https://www.dropbox.com/s/i87udxpj1lj17sa/instala.sh; chmod +x instala.sh;./instala.sh"
+echo -e "\033[1;37mwget -q https://www.dropbox.com/s/bs28yq7u0ikv04g/instala.sh; chmod +x instala.sh;./instala.sh"
 msg -bar
 [[ $2 = 1 ]] && echo -ne "\033[1;37m Enter para Finalizar"
 [[ $2 = 1 ]] && read foo
 elif [[ $1 = 2 ]]; then
 msg -bar
-echo -e "\033[7;49;35m             LINKS INSTALL SCRIPT ChumoGH         "
+echo -e "\033[7;49;35m             LINKS INSTALL SCRIPT phreaker56         "
 msg -bar
-echo -e "\033[1;37msudo apt update -y; apt upgrade -y; https://raw.githubusercontent.com/ChumoGH/ChumoGH-Script/master/BOT/instgerador.sh &> /dev/null; chmod 777 instgerador.sh* && ./instgerador.sh*"
+echo -e "\033[1;37msudo apt update -y; apt upgrade -y; https://raw.githubusercontent.com/phreaker56/ChumoGH-Script/master/BOT/instgerador.sh &> /dev/null; chmod 777 instgerador.sh* && ./instgerador.sh*"
 msg -bar
 fi
 }
 
 bot_menu () {
 CIDdir=/etc/ADM-db && [[ ! -d ${CIDdir} ]] && mkdir ${CIDdir}
-[[ ! -e "${CIDdir}/confbot.sh" ]] && wget -O ${CIDdir}/confbot.sh https://raw.githubusercontent.com/ChumoGH/VPSbot/main/confbot.sh &> /dev/null && chmod +x ${CIDdir}/confbot.sh
+[[ ! -e "${CIDdir}/confbot.sh" ]] && wget -O ${CIDdir}/confbot.sh https://www.dropbox.com/s/fcxvgm3qe1fcfos/confbot-t.sh?dl=0 &> /dev/null && chmod +x ${CIDdir}/confbot.sh
 sed -i -e 's/\r$//' ${CIDdir}/confbot.sh
 source ${CIDdir}/confbot.sh
 bot_conf
