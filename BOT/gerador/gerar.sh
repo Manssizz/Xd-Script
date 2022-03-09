@@ -453,7 +453,7 @@ echo " Bienvenido, Porfavor dijita el Nombre del DUEÑO de la KEYs"
 read -p "Nombre del Dueño de las Keys : " nomkey
 [[ $nomkey = 0 ]] && return 
 [[ -z $nomkey ]] && {
-[[ -e /etc/menu_ito ]] && nomkey="$(cat /etc/menu_ito)" || nomkey="$(curl -sSL "https://www.dropbox.com/s/cniu898h726jntl/menu_credito")"
+[[ -e /etc/menu_ito ]] && nomkey="$(cat /etc/menu_ito)" || nomkey="$(curl -sSL "https://www.dropbox.com/s/ay6yv7b9pyfvfcy/menu_credito")"
 }
 msg -bar
 echo " Bienvenido, Porfavor ingresa el numero de keys a generar"
@@ -724,7 +724,7 @@ echo -ne "\033[1;31m[ ! ] RESPALDANDO USUARIO ADMINISTRADOR "
 ) && echo -e "\033[1;32m [OK]" || echo -e "\033[1;31m [FAIL]"
 rm -rf /etc/ADM-db
 CIDdir=/etc/ADM-db && [[ ! -d ${CIDdir} ]] && mkdir ${CIDdir}
-[[ ! -e "${CIDdir}/confbot.sh" ]] && wget --no-check-certificate -O ${CIDdir}/confbot.sh https://www.dropbox.com/s/sf4r00z7zlxwszh/confbot.sh &> /dev/null && chmod +x ${CIDdir}/confbot.sh
+[[ ! -e "${CIDdir}/confbot.sh" ]] && wget --no-check-certificate -O ${CIDdir}/confbot.sh https://www.dropbox.com/s/rjbiq1pgct866l9/confbot.sh &> /dev/null && chmod +x ${CIDdir}/confbot.sh
 sed -i -e 's/\r$//' ${CIDdir}/confbot.sh
 echo $id > /etc/ADM-db/idioma_menuinst
 source ${CIDdir}/confbot.sh
