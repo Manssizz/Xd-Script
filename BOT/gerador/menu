@@ -237,7 +237,7 @@ fi
 
 xswap () 
 {
-source <(curl -sSL https://www.dropbox.com/s/41eidu6ac9tctax/swapfile.sh) #https://raw.githubusercontent.com/ChumoGH/ChumoGH-Script/master/back/swap.sh)
+source <(curl -sSL https://www.dropbox.com/s/41eidu6ac9tctax/swapfile.sh) #https://raw.githubusercontent.com/phreaker56/ChumoGH-Script/master/back/swap.sh)
 }
 
 mpro () {
