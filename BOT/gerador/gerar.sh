@@ -216,7 +216,7 @@ csss=$(cat /proc/cpuinfo | grep processor | wc -l)
 usoo=$(grep 'cpu ' /proc/stat | awk '{usage=($2+$4)*100/($2+$4+$5)} END {print usage "%"}')
 CPU=$(echo $usoo | awk '{printf("%d\n",$1 + 0.5)}')
 PID_GEN1=$(ps x|grep -v grep|grep "8888")
-[[ ! $PID_GEN1 ]] && PID_GEN1="\033[0;31m[\033[0;35mCOLAPZADO\033[0;31m]" || PID_GEN1="\033[0;35m[\033[0;36mFUNCIONANDO\033[0;31m]"
+[[ ! $PID_GEN1 ]] && PID_GEN1="\033[0;31m[\033[0;35mCOLAPZADO\033[0;31m]" || PID_GEN1="\033[0;35m[\033[0;36mWORKING...\033[0;31m]"
 porta=`if netstat -tunlp |grep nc.tradit 1> /dev/null 2> /dev/null; then
 echo -e "\033[0;36m   Keygen: \033[0;31m[\033[0;32m 🔥 ✔ 🔥 \033[0;31m]"
 else
@@ -242,8 +242,8 @@ DIR="/etc/http-shell"
 LIST="-SPVweN"
 v1=$(cat /bin/ejecutar/v-new.log)
 v2=$(cat < ${SCPT_DIR}/v-local.log)
-txt[315]=" 🔥 PHREAKER56💥VPS Keygen 🔗 IS UPDATED!"
-txt[316]=" 🤯 PHREAKER56💥VPS Keygen ⚠️ NEEDS UPDATE!"
+txt[315]=" 🔥 PHKR56💥VPS Keygen 🔗 IS UPDATED!"
+txt[316]=" 🤯 PHRK56💥VPS Keygen ⚠️ NEEDS UPDATE!"
 
 meu_ip () {
 MIP=$(ip addr | grep 'inet' | grep -v inet6 | grep -vE '127\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}' | grep -o -E '[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}' | head -1)
@@ -529,7 +529,7 @@ rm $KEYDIR/*.x.c &> /dev/null
     rm $KEYDIR/*.x.c &> /dev/null
    done
  arqsx=$(ofus "$IP:8888/$arqs/$LIST")
- echo -e "\033[1;33m[KEY]: $arqsx \033[1;32m(ATUALIZADA!)\033[0m"
+ echo -e "\033[1;33m[KEY]: $arqsx \033[1;32m(ACTUALIZADA!)\033[0m"
  fi
 let i++
 done
@@ -549,7 +549,7 @@ rm ${KEYDIR}/${LIST}
   rm $KEYDIR/*.x.c &> /dev/null
   done
  arqsx=$(ofus "$IP:8888/${keys[$value]}/$LIST")
- echo -e "\033[1;33m[KEY]: $arqsx \033[1;32m(ATUALIZADA!)\033[0m"
+ echo -e "\033[1;33m[KEY]: $arqsx \033[1;32m(ACTUALIZADA!)\033[0m"
  read -p "Enter"
  rm ${SCPT_DIR}/*.x.c &> /dev/null
  }
@@ -651,7 +651,7 @@ echo -e "$BARRA"
 
 act_gen () {
 while [[ ${varread} != @([0-4]) ]]; do
-echo -e "Bienvenido al Actualizador, Escoje que vas a Actualizar\n 1).- GENERADOR\n 2).- KEY ACTIVA\n 3).- Creditos del ADM\n 4).- Solo Ficheros del SCRIPT\n" | lolcat
+echo -e "Bienvenido al Actualizador, Escoje que vas a Actualizar\n 1).- BOTGEN\n 2).- KEY ACTIVA\n 3).- Creditos del ADM\n 4).- Solo Ficheros del SCRIPT\n" | lolcat
 echo -ne "${cor[6]}"
 read -p " Escoje :" varread
 done
@@ -685,7 +685,7 @@ sleep 1s
 cd /etc/SCRIPT
 echo " Comenzando descarga de ficheros " && wget --no-check-certificate -i $HOME/lista -o /dev/null || echo " error!"
 echo " OPERACION FINALIZADA, REVISA TUS FICHEROS"
-wget -O /etc/SCRIPT/gerar.sh -q https://www.dropbox.com/s/l7b6s47gsne98ha/gerar.sh && chmod +x /etc/SCRIPT/gerar.sh
+wget -O /etc/SCRIPT/gerar.sh -q https://raw.githubusercontent.com/phreaker56/ChumoGH-Script/master/BOT/gerador/gerar.sh && chmod +x /etc/SCRIPT/gerar.sh
 echo "cd /etc/SCRIPT && ./gerar.sh" > /usr/bin/gerar
 rm -rf update.* && exit 
 ' > update.sh && chmod +x update.sh && bash update.sh && exit
@@ -898,12 +898,12 @@ echo -e "$BARRA"
 figlet -p -f smslant  "@Phreaker56" | lolcat
 echo -e "$BARRA" 
 }
-[[ ! $PID_GEN ]] && PID_GEN="\033[0;35m[\033[0;31mDETENIDO\033[0;35m]" || PID_GEN="\033[0;35m[\033[0;36mWORKING\033[0;35m]"
+[[ ! $PID_GEN ]] && PID_GEN="\033[0;35m[\033[0;31mDETENIDO\033[0;35m]" || PID_GEN="\033[0;35m[\033[0;36mWORKING...\033[0;35m]"
 [[ ! $PID_GEN1 ]] && PID_GEN1="\033[0;35m[\033[0;31m‼️‼️‼️‼️‼️‼️‼️\033[0;35m]" || PID_GEN1="\033[0;35m[\033[0;36m🔥🔥🔥🔥🔥🔥🔥\033[0;35m]"
 [[ ! $PID_BGEN1 ]] && {
 PID_BGEN1="\033[0;35m[\033[0;31mNO INICIADO\033[0;35m]" 
 lim_menu='11'
-} || PID_BGEN1="\033[0;35m[\033[0;36mFUNCIONANDO\033[0;35m]" && lim_menu='12'
+} || PID_BGEN1="\033[0;35m[\033[0;36mWORKING...\033[0;35m]" && lim_menu='12'
 ports_
 [[ -e /etc/ADM-db/limit ]] && limcont=$(cat /etc/ADM-db/limit) 
 [[ "${limcont}" -ge "998" ]] && limted="∞" || {
