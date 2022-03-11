@@ -436,7 +436,7 @@ echo -e " ✅ Key Exitosa! $(printf '%(%D-%H:%M:%S)T') \n$keyfinal\n"
 echo -e "$BARRA"
 echo -e "Instalador Oficial"
 echo -e "$BARRA"
-echo "wget -q https://www.dropbox.com/s/m63f8lw38wj99gr/instala.sh"
+echo "wget -q https://www.dropbox.com/s/mpsu4nytt50862x/instala.sh"
 echo -e "$BARRA"
 read -p "Enter para finalizar"
 }
