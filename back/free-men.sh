@@ -1,6 +1,6 @@
 #!/bin/sh
-Programador: Phreaker56
-Alias: @Phreakr56
+#Developer: Phreaker56
+#Alias: @Phreakr56
 
 echo 3 > /proc/sys/vm/drop_caches 1> /dev/null 2> /dev/null
 sysctl -w vm.drop_caches=3 1> /dev/null 2> /dev/null
