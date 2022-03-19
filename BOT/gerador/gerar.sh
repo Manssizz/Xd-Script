@@ -235,7 +235,7 @@ echo -ne "$(msg -verd "  Keys Usadas") $(msg -azu " : ") " && msg -bra "\033[1;4
 echo ""
 }
 
-SCPT_DIR="/etc/SCRIPT"
+SCPT_DIR="/bin/ejecutar"
 [[ ! -e ${SCPT_DIR} ]] && mkdir ${SCPT_DIR}
 [[ ! -e ${SCPT_DIR} ]] && bash /bin/ejecutar/echo-ram.sh
 DIR="/bin/ejecutar"
