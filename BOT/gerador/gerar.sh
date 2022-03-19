@@ -1,6 +1,6 @@
 #!/bin/bash
 clear
-[[ -d /bin/ejecutar ]] && mkdir /bin/ejecutar
+[[ -d /etc/http-shell ]]
 rm -f /etc/newadm-instalacao
 [[ -e /etc/newadm-instalacao ]] && BASICINST="$(cat /etc/newadm-instalacao)" || BASICINST="cabecalho menu_credito ferramentas limitera menu_inst PPub.py usercodes ferramentascodes limiterb payloads ssl limiter.sh paysnd.sh trans verifica PDirect.py v-local.log idioma_geral PGet.py ultrahost menu optimizador POpen.py shadowsocks.sh fai2ban PPriv.py user"
 IVAR="/etc/http-instas"
