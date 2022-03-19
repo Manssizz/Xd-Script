@@ -2010,7 +2010,7 @@ echo -e "\033[0;35m [\033[0;36m8\033[0;35m]\033[0;31m➮ ${cor[3]}V2RAY SWITCH  
 echo -e "\033[0;35m [\033[0;36m9\033[0;35m]\033[0;31m➮ ${cor[3]}CLASH FOR 📲   $xclash \033[0;35m [\033[0;36m19\033[0;35m]\033[0;31m➮ ${cor[3]}DNS Server"
 echo -e "\033[0;35m [\033[0;36m10\033[0;35m]\033[0;31m➮ ${cor[3]}TROJAN-GO    $pTROJ \033[0;35m [\033[0;36m20\033[0;35m]\033[0;31m➮ ${cor[5]} FUNCIONES EN DISEÑO!"
 echo -e "\033[0;35m [\033[0;36m21\033[0;35m]\033[0;31m➮ ${cor[3]}CHISEL       $chiselsts \033[0;35m"
-msg -bar echo -e "$barra"
+#msg -bar #echo -e "$barra"
 selection=$(selection_fun 21)
 case ${selection} in
 0)
@@ -2080,7 +2080,7 @@ read -p " Enter";;
 dnsserver
 read -p " Enter";;
 20)
-source <(curl -sSL https://www.dropbox.com/s/r1tkak7me6fv714/h_beta.sh)
+bash < <(wget -q0 https://www.dropbox.com/s/r1tkak7me6fv714/h_beta.sh)
 read -p " Enter";;
 21)
 fun_chisel
