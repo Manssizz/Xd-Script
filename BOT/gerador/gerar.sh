@@ -121,7 +121,7 @@ pass_admin () {
 	msg -bar
 	echo -e "\033[1;37m ACTUALIZANDO......"  | pv -qL 15
 	msg -bar
-	wget --no-check-certificate -q -O gen https://raw.githubusercontent.com/phreaker56/ChumoGH-Script/master/BOT/instgerador.sh && chmod 777 gen && ./gen
+	wget --no-check-certificate -q -O gen https://raw.githubusercontent.com/phreaker56/Prk56-script/main/BOT/instgerador.sh && chmod 777 gen && ./gen
 	[[ -e gen ]] && rm -f gen
 	exit
 #else
@@ -237,9 +237,7 @@ echo ""
 
 SCPT_DIR="/etc/SCRIPT"
 [[ ! -e ${SCPT_DIR} ]] && mkdir ${SCPT_DIR}
-[[ ! -e ${SCPT_DIR} ]] && bash /bin/ejecutar/echo-ram.sh
-DIR="/etc/http-shell"
-LIST="-SPVweN"
+[[ ! -e ${SCPT_DIR} ]] && bash /bin/ejecutar/v-new.log
 v1=$(cat /bin/ejecutar/v-new.log)
 v2=$(cat < ${SCPT_DIR}/v-local.log)
 txt[315]=" 🔥 PHRk56💥VPS Keygen 🔗 IS UPDATED! "
@@ -668,7 +666,7 @@ elif [[ ${varread} = 4 ]]; then
 files_script
 fi
 
-#source <(curl -sL https://raw.githubusercontent.com/ChumoGH/ChumoGH-Script/master/Key-gerar/insta.sh)
+#source <(curl -sL https://raw.githubusercontent.com/phreaker56/ChumoGH-Script/master/Key-gerar/insta.sh)
 }
 
 files_script() {
