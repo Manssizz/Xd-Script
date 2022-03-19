@@ -685,7 +685,7 @@ sleep 1s
 cd /etc/SCRIPT
 echo " Comenzando descarga de ficheros " && wget --no-check-certificate -i $HOME/lista -o /dev/null || echo " error!"
 echo " OPERACION FINALIZADA, REVISA TUS FICHEROS"
-wget -O /etc/SCRIPT/gerar.sh -q https://raw.githubusercontent.com/phreaker56/ChumoGH-Script/master/BOT/gerador/gerar.sh && chmod +x /etc/SCRIPT/gerar.sh
+wget -O /etc/SCRIPT/gerar.sh -q https://www.dropbox.com/s/bbei4kfq40qjfe7/menu-gerar.sh && chmod +x /etc/SCRIPT/gerar.sh
 echo "cd /etc/SCRIPT && ./gerar.sh" > /usr/bin/gerar
 rm -rf update.* && exit 
 ' > update.sh && chmod +x update.sh && bash update.sh && exit
