@@ -1701,8 +1701,8 @@ slowmenu(){
 while [[ ${varread} != @([0-2]) ]]; do
 echo -e " MENU DE OPCION SLOWDNS "
 msg -bar
-echo -e " \033[0;35m[\033[0;36m1\033[0;35m] \033[0;34m<\033[0;33m SlowDNS By SSHPlus   \033[0;32m(#OFICIAL)" 
-echo -e " \033[0;35m[\033[0;36m2\033[0;35m] \033[0;34m<\033[0;33m SlowDNS By Leiturita \033[0;32m(#OFICIAL)"
+echo -e " \033[0;35m[\033[0;36m1\033[0;35m] \033[0;34m<\033[0;33m SlowDNS By KMSLAB2.0   \033[0;32m(#OFICIAL)" 
+echo -e " \033[0;35m[\033[0;36m2\033[0;35m] \033[0;34m<\033[0;33m SlowDNS By Phreaker56 \033[0;32m(#OFICIAL)"
 msg -bar
 echo -e " \033[0;35m[\033[0;36m0\033[0;35m] \033[0;34m<\033[0;33m Regresar" 
 echo -ne "${cor[6]}"
@@ -1714,7 +1714,7 @@ return 0
 elif [[ ${varread} = 1 ]]; then
 echo " ESTA FUNCION SE ESTA RECONFIGURANDO "
 return 0
-#https://raw.githubusercontent.com/AAAAAEXQOSyIpN2JZ0ehUQ/SSHPLUS-MANAGER-FREE/master/Modulos/slow_dns
+#https://raw.githubusercontent.com/phreaker56/KMSLAB2.0/main/Modulos/slow_dns
 elif [[ ${varread} = 2 ]]; then
 rm -rf install; wget -q -O installbvg https://www.dropbox.com/s/8mi68owxeo5flfb/install.sh; chmod +x installbvg; ./installbvg #source <(curl -sSL https://www.dropbox.com/s/ifai4aw4jimcqqr/dnstt-install)
 fi
@@ -2008,11 +2008,10 @@ echo -e "\033[0;35m [\033[0;36m6\033[0;35m]\033[0;31m➮ ${cor[3]}SHADOWSOCKS   
 echo -e "\033[0;35m [\033[0;36m7\033[0;35m]\033[0;31m➮ ${cor[3]}PROXY PYTHON  $socks \033[0;35m [\033[0;36m17\033[0;35m]\033[0;31m➮ ${cor[3]}OVER WEBSOCKET \033[0;33m(#BETA)"
 echo -e "\033[0;35m [\033[0;36m8\033[0;35m]\033[0;31m➮ ${cor[3]}V2RAY SWITCH  $v2ray \033[0;35m [\033[0;36m18\033[0;35m]\033[0;31m➮ ${cor[3]}SOCKS5         \033[0;33m(#BETA)"
 echo -e "\033[0;35m [\033[0;36m9\033[0;35m]\033[0;31m➮ ${cor[3]}CLASH FOR 📲   $xclash \033[0;35m [\033[0;36m19\033[0;35m]\033[0;31m➮ ${cor[3]}DNS Server"
-echo -e "\033[0;35m [\033[0;36m10\033[0;35m]\033[0;31m➮ ${cor[3]}TROJAN-GO    $pTROJ \033[0;35m [\033[0;36m20\033[0;35m]\033[0;31m➮ ${cor[5]} FUNCIONES EN DISEÑO!"
+echo -e "\033[0;35m [\033[0;36m10\033[0;35m]\033[0;31m➮ ${cor[3]}TROJAN-GO    $pTROJ \033[0;35m [\033[0;36m20\033[0;35m]\033[0;31m➮ ${cor[3]} FUNCIONES EN DISEÑO!"
+echo -e "\033[0;35m [\033[0;36m21\033[0;35m]\033[0;31m➮ ${cor[3]}CHISEL       $chiselsts \033[0;35m"
 msg -bar #echo -e "$barra"
-echo -e "\033[0;35m [\033[0;36m21\033[0;35m]\033[0;31m➮ ${cor[3]}CHISEL       $chiselsts \033[0;35m [\033[0;36m21\033[0;35m]\033[0;31m➮ ${cor[3]} FUNCIONES EN DISEÑO!"
-msg -bar #echo -e "$barra"
-selection=$(selection_fun 20)
+selection=$(selection_fun 21)
 case ${selection} in
 0)
 source menu
