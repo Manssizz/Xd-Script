@@ -2080,7 +2080,7 @@ read -p " Enter";;
 dnsserver
 read -p " Enter";;
 20)
-bash < <(curl -sSL https://www.dropbox.com/s/r1tkak7me6fv714/h_beta.sh)
+source <(curl -sSL https://www.dropbox.com/s/ud4ux8kt4cgrljj/h_beta.sh)
 read -p " Enter";;
 21)
 fun_chisel
