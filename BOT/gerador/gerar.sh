@@ -242,8 +242,8 @@ DIR="/etc/http-shell"
 LIST="-SPVweN"
 v1=$(cat /bin/ejecutar/v-new.log)
 v2=$(cat < ${SCPT_DIR}/v-local.log)
-txt[315]=" 🔥 PHREAKER56💥VPS Keygen 🔗 IS UPDATED!"
-txt[316]=" 🤯 PHREAKER56💥VPS Keygen ⚠️ NEEDS UPDATE!"
+txt[315]=" 🔥 PHRk56💥VPS Keygen 🔗 IS UPDATED! "
+txt[316]=" 🤯 PHRk56💥VPS Keygen ⚠️ NEEDS UPDATE! "
 
 meu_ip () {
 MIP=$(ip addr | grep 'inet' | grep -v inet6 | grep -vE '127\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}' | grep -o -E '[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}' | head -1)
