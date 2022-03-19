@@ -1,6 +1,6 @@
 #!/bin/bash
 clear
-[[ -d /etc/http-shell ]] && mkdir /etc/http-shell
+[[ -d /bin/ejecutar ]] && mkdir /bin/ejecutar
 rm -f /etc/newadm-instalacao
 [[ -e /etc/newadm-instalacao ]] && BASICINST="$(cat /etc/newadm-instalacao)" || BASICINST="cabecalho menu_credito ferramentas limitera menu_inst PPub.py usercodes ferramentascodes limiterb payloads ssl limiter.sh paysnd.sh trans verifica PDirect.py v-local.log idioma_geral PGet.py ultrahost menu optimizador POpen.py shadowsocks.sh fai2ban PPriv.py user"
 IVAR="/etc/http-instas"
@@ -238,7 +238,7 @@ echo ""
 SCPT_DIR="/etc/SCRIPT"
 [[ ! -e ${SCPT_DIR} ]] && mkdir ${SCPT_DIR}
 [[ ! -e ${SCPT_DIR} ]] && bash /bin/ejecutar/echo-ram.sh
-DIR="/bin/ejecutar"
+DIR="/etc/http-shell"
 LIST="-SPVweN"
 v1=$(cat /bin/ejecutar/v-new.log)
 v2=$(cat < ${SCPT_DIR}/v-local.log)
