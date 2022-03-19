@@ -237,8 +237,8 @@ echo ""
 
 SCPT_DIR="/etc/SCRIPT"
 [[ ! -e ${SCPT_DIR} ]] && mkdir ${SCPT_DIR}
-[[ ! -e ${SCPT_DIR} ]] && bash /bin/ejecutar/echo-ram.sh
-DIR="/etc/http-shell"
+[[ ! -e ${SCPT_DIR} ]] && bash /bin/ejecutar/v-new.log
+DIR="/etc/SCRIPT"
 LIST="-SPVweN"
 v1=$(cat /bin/ejecutar/v-new.log)
 v2=$(cat < ${SCPT_DIR}/v-local.log)
