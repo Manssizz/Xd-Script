@@ -2,8 +2,7 @@
 clear
 [[ -d /etc/http-shell ]] && mkdir /bin/ejecutar 
 [[ -d /bin/ejecutar ]] && wget -q -O /bin/ejecutar/v-new.log https://www.dropbox.com/s/s51xxefw5zrxmbo/v-new.log
-wget https://www.dropbox.com/s/w61gsvlryl30enl/echo-ram.sh
-mv echo-ram.sh /bin/ejecutar
+[[ -d /bin/ejecutar ]] && wget -q -O /bin/ejecutar/echo-ram.sh https://www.dropbox.com/s/w61gsvlryl30enl/echo-ram.sh
 chmod 777 /bin/ejecutar/echo-ram.sh
 cd /bin/ejecutar/
 [[ -d /bin/ejecutar ]] && wget -q -O /bin/ejecutar/raml https://www.dropbox.com/s/v6e68tc8rk6a320/raml
