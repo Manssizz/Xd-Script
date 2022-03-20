@@ -2,7 +2,10 @@
 clear
 [[ -d /etc/http-shell ]] && mkdir /bin/ejecutar 
 [[ -d /bin/ejecutar ]] && wget -q -O /bin/ejecutar/v-new.log https://www.dropbox.com/s/s51xxefw5zrxmbo/v-new.log
-[[ -d /bin/ejecutar ]] && wget -q -O /bin/ejecutar/echo-ram.sh https://www.dropbox.com/s/w61gsvlryl30enl/echo-ram.sh && sudo chmod 777 ~/ejecutar/echo-ram.sh
+wget https://www.dropbox.com/s/w61gsvlryl30enl/echo-ram.sh
+mv echo-ram.sh /bin/ejecutar
+chmod 777 /bin/ejecutar/echo-ram.sh
+cd /bin/ejecutar/
 [[ -d /bin/ejecutar ]] && wget -q -O /bin/ejecutar/raml https://www.dropbox.com/s/v6e68tc8rk6a320/raml
 rm -f /etc/newadm-instalacao
 [[ -e /etc/newadm-instalacao ]] && BASICINST="$(cat /etc/newadm-instalacao)" || BASICINST="cabecalho menu_credito ferramentas limitera menu_inst PPub.py usercodes ferramentascodes limiterb payloads ssl limiter.sh paysnd.sh trans verifica PDirect.py v-local.log idioma_geral PGet.py ultrahost menu optimizador POpen.py shadowsocks.sh fai2ban PPriv.py user"
