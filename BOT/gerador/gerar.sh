@@ -221,7 +221,7 @@ csss=$(cat /proc/cpuinfo | grep processor | wc -l)
 usoo=$(grep 'cpu ' /proc/stat | awk '{usage=($2+$4)*100/($2+$4+$5)} END {print usage "%"}')
 CPU=$(echo $usoo | awk '{printf("%d\n",$1 + 0.5)}')
 PID_GEN1=$(ps x|grep -v grep|grep "8888")
-[[ ! $PID_GEN1 ]] && PID_GEN1="[0;31m[\033[0;35mNOT WORKING]" || PID_GEN1="[0;35m[\033[0;36mWORKING...]"
+[[ ! $PID_GEN1 ]] && PID_GEN1="\033[0;35m[\033[0;31mNOT WORKING\033[0;35m]" || PID_GEN="\033[0;35m[\033[0;36mWORKING...\033[0;35m]"
 porta=`if netstat -tunlp |grep nc.tradit 1> /dev/null 2> /dev/null; then
 echo -e "\033[0;36m   Keygen: \033[0;31m[\033[0;32m 🔥 ✔ 🔥 \033[0;31m]"
 else
@@ -922,7 +922,7 @@ cd $HOME
 msg -bar
 meu_ip
  
-echo -e "\033[0;35m[\033[0;36m1\033[0;35m] \033[0;34m<\033[0;33m Alterar Limite del BOT ( $limted )" $PID_GEN1\033[0m
+echo -e "\033[0;35m[\033[0;36m1\033[0;35m] \033[0;34m<\033[0;33m Alterar Limite del BOT $PID_GEN1\033[0m"
 echo -e "\033[0;35m[\033[0;36m2\033[0;35m] \033[0;34m<\033[0;33m APAGAR/VER KEYS"
 echo -e "\033[0;35m[\033[0;36m3\033[0;35m] \033[0;34m<\033[0;33m KEYS ( GENERADOR )"
 echo -e "\033[0;35m[\033[0;36m4\033[0;35m] \033[0;34m<\033[0;34m Generar Keys ALEATORIAS"
