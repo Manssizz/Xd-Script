@@ -922,7 +922,7 @@ cd $HOME
 msg -bar
 meu_ip
  
-echo -e "\033[0;35m[\033[0;36m1\033[0;35m] \033[0;34m<\033[0;33m Alterar Limite del BOT $PID_GEN1\033[0m"
+echo -e "\033[0;35m[\033[0;36m1\033[0;35m] \033[0;34m<\033[0;33m Alterar Limite del BOT "($limited) $PID_GEN1
 echo -e "\033[0;35m[\033[0;36m2\033[0;35m] \033[0;34m<\033[0;33m APAGAR/VER KEYS"
 echo -e "\033[0;35m[\033[0;36m3\033[0;35m] \033[0;34m<\033[0;33m KEYS ( GENERADOR )"
 echo -e "\033[0;35m[\033[0;36m4\033[0;35m] \033[0;34m<\033[0;34m Generar Keys ALEATORIAS"
