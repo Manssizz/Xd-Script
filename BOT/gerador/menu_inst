@@ -2009,7 +2009,8 @@ echo -e "\033[0;35m [\033[0;36m7\033[0;35m]\033[0;31m➮ ${cor[3]}PROXY PYTHON  
 echo -e "\033[0;35m [\033[0;36m8\033[0;35m]\033[0;31m➮ ${cor[3]}V2RAY SWITCH  $v2ray \033[0;35m [\033[0;36m18\033[0;35m]\033[0;31m➮ ${cor[3]}SOCKS5         \033[0;33m(#BETA)"
 echo -e "\033[0;35m [\033[0;36m9\033[0;35m]\033[0;31m➮ ${cor[3]}CLASH FOR 📲   $xclash \033[0;35m [\033[0;36m19\033[0;35m]\033[0;31m➮ ${cor[3]}DNS Server"
 echo -e "\033[0;35m [\033[0;36m10\033[0;35m]\033[0;31m➮ ${cor[3]}TROJAN-GO    $pTROJ \033[0;35m [\033[0;36m20\033[0;35m]\033[0;31m➮ ${cor[5]} FUNCIONES EN DISEÑO!"
-echo -e "\033[0;35m [\033[0;36m21\033[0;35m]\033[0;31m➮ ${cor[3]}CHISEL       $chiselsts \033[0;35m"
+msg -bar
+echo -e "\033[0;35m [\033[0;36m21\033[0;35m]\033[0;31m➮ ${cor[3]}CHISEL       $chiselsts \033[0;35m" [\033[0;34m➮\033[0;33m $(msg -bra "\033[1;41m[ REGRESAR ]\e[0m") 
 #msg -bar #echo -e "$barra"
 selection=$(selection_fun 21)
 case ${selection} in
