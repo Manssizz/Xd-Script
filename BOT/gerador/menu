@@ -106,7 +106,7 @@ source <(curl -sSL https://www.dropbox.com/s/0g49zme77giypns/mod-v2ray.sh)
 }
 
 autoop(){
-[[ -e /root/name ]] && figlet -p -f smslant < /root/name | lolcat || echo -e "\033[7;49;35m    =====>>►► 🐲 New Phreaker56💥VPS 🐲 ◄◄<<=====      \033[0m"
+[[ -e /root/name ]] && figlet -p -f smslant < /root/name | lolcat || echo -e "\033[7;49;35m    =====>>►► 🐲 New Axel[VPS] 🐲 ◄◄<<=====      \033[0m"
 echo -e "\033[1;37m  【  ★ Reseller : $(cat < /bin/ejecutar/menu_credito) 2022 ★  】\033[0m"
 msg -bar
 echo -e "${cor[2]} \033[1;32mESTA FUNCION AGREGARA EN EL CRONTAB UN AUTOEJECUCION"
@@ -132,7 +132,7 @@ case ${selection} in
 	clear
 	figlet -p -f slant Phreaker56
 	echo -e "${cor[2]} \033[1;32mFUNCION EN DISEÑO" $rrr
-	[[ -e /root/name ]] && figlet -p -f smslant < /root/name | lolcat || echo -e "\033[7;49;35m    =====>>►► 🐲 New Phreaker56💥VPS 🐲 ◄◄<<=====      \033[0m"
+	[[ -e /root/name ]] && figlet -p -f smslant < /root/name | lolcat || echo -e "\033[7;49;35m    =====>>►► 🐲 New Axel[VPS] 🐲 ◄◄<<=====      \033[0m"
 	echo -e "\033[1;37m  【  ★ Reseller : $(cat < /bin/ejecutar/menu_credito) 2022 ★  】\033[0m"
 	echo "Desabilitando Servicios de AutOptimizacion"
 		sed -i "/ejecutar/d" /etc/crontab
@@ -390,7 +390,7 @@ echo -e "\033[1;31mINSTALACION FINALIZADA - PRESIONE ENTER\033[0m"
 read -p " "
 }
 function removershadowsocks(){
-wget --no-check-certificate -O libev.sh https://raw.githubusercontent.com/phreaker56/ChumoGH-Script/master/shadowsocks.sh > /dev/null 2>&1
+wget --no-check-certificate -O libev.sh https://raw.githubusercontent.com/Vps-mx01/Xd-Script/master/shadowsocks.sh > /dev/null 2>&1
 chmod +x libev.sh 
 ./libev.sh uninstall 
 rm -rf libev.sh 
@@ -474,7 +474,7 @@ read -p " "
 }
 
 function mtraff(){
-[[ -e /root/name ]] && figlet -p -f smslant < /root/name | lolcat || echo -e "\033[7;49;35m    =====>>►► 🐲 New Phreaker56💥VPS 🐲 ◄◄<<=====      \033[0m"
+[[ -e /root/name ]] && figlet -p -f smslant < /root/name | lolcat || echo -e "\033[7;49;35m    =====>>►► 🐲 New Axel[VPS] 🐲 ◄◄<<=====      \033[0m"
 echo -e "\033[1;37m  【  ★ Reseller : $(cat < /bin/ejecutar/menu_credito) 2022 ★  】\033[0m"
 msg -bar
 vnstat
@@ -724,7 +724,7 @@ rm /etc/nginx/sites-enabled/default
 rm /etc/nginx/sites-available/default
 wget -q -O /etc/nginx/nginx.conf "https://www.dropbox.com/s/z2bhbb9sm9hhv3n/nginx.conf"
 [[ ! -d /var/www/html ]] && mkdir -p /var/www/html
-[[ ! -e /var/www/html/index.html ]] && echo "<pre>Setup by @Phreakr56</pre>" > /var/www/html/index.html
+[[ ! -e /var/www/html/index.html ]] && echo "<pre>Setup by @Axel[VPS]</pre>" > /var/www/html/index.html
 wget -O /etc/nginx/conf.d/vps.conf "https://www.dropbox.com/s/xg0a50t6zp4o331/vps.conf"
 /etc/init.d/nginx restart
 
@@ -759,7 +759,7 @@ fi
 }
 
 verifi_fun () {
-[[ -e /root/name ]] && figlet -p -f smslant < /root/name | lolcat || echo -e "\033[7;49;35m    =====>>►► 🐲 New Phreaker56💥VPS 🐲 ◄◄<<=====      \033[0m"
+[[ -e /root/name ]] && figlet -p -f smslant < /root/name | lolcat || echo -e "\033[7;49;35m    =====>>►► 🐲 New Axel[VPS] 🐲 ◄◄<<=====      \033[0m"
 echo -e "\033[1;37m  【  ★ Reseller : $(cat < /bin/ejecutar/menu_credito) 2022 ★  】\033[0m"
 msg -bar
 echo -e ""
@@ -851,12 +851,12 @@ fi
 
 fun7() {
 clear
-[[ -e /root/name ]] && figlet -p -f smslant < /root/name | lolcat || echo -e "\033[7;49;35m    =====>>►► 🐲 New Phreaker56💥VPS 🐲 ◄◄<<=====      \033[0m"
+[[ -e /root/name ]] && figlet -p -f smslant < /root/name | lolcat || echo -e "\033[7;49;35m    =====>>►► 🐲 New  Axel[VPS] 🐲 ◄◄<<=====      \033[0m"
 echo -e "\033[1;37m  【   Reseller : $(cat < /bin/ejecutar/menu_credito) 2022   】\033[0m"
 msg -bar
 #echo -e ""
 #msg -bar
-echo -e "${cor[2]}  ☯  Menu de Administracion Herramientas BETA by Phreaker56💥 ☯ "
+echo -e "${cor[2]}  ☯  Menu de Administracion Herramientas BETA by Axel💥 ☯ "
 msg -bar
 echo -e "${cor[2]} [0] > \033[1;31mVolver"
 echo -e "${cor[2]} [1] > \033[1;36mMenu Servicios Protocolos  " #\033[0;32m(#OFICIAL)"
@@ -887,7 +887,7 @@ case $ppp in
 	;;
 	1)
 	clear
-	[[ -e /root/name ]] && figlet -p -f smslant < /root/name | lolcat || echo -e "\033[7;49;35m    =====>>►► 🐲 New Phreaker56💥VPS 🐲 ◄◄<<=====      \033[0m"
+	[[ -e /root/name ]] && figlet -p -f smslant < /root/name | lolcat || echo -e "\033[7;49;35m    =====>>►► 🐲 New Axel[VPS] 🐲 ◄◄<<=====      \033[0m"
 echo -e "\033[1;37m  【  ★ Reseller : $(cat < /bin/ejecutar/menu_credito) 2022 ★  】\033[0m"
 		msg -bar
 		echo -e "
@@ -905,7 +905,7 @@ echo -e "\033[1;37m  【  ★ Reseller : $(cat < /bin/ejecutar/menu_credito) 202
 		;;
 		2)
 		clear
-[[ -e /root/name ]] && figlet -p -f smslant < /root/name | lolcat || echo -e "\033[7;49;35m    =====>>►► 🐲 New Phreaker56💥VPS 🐲 ◄◄<<=====      \033[0m"
+[[ -e /root/name ]] && figlet -p -f smslant < /root/name | lolcat || echo -e "\033[7;49;35m    =====>>►► 🐲 New Axel[VPS] 🐲 ◄◄<<=====      \033[0m"
 echo -e "\033[1;37m      【      Reseller : $(cat < /bin/ejecutar/menu_credito) - ADM 2022       】\033[0m" 
 		echo -e "[\033[1;31m-\033[1;33m]\033[1;31m #######################################\033[1;33m"
 		echo -e "\033[1;37mSeleccione una opcion a desinstalar:    Para Salir Ctrl + C\033[1;33m
@@ -961,7 +961,7 @@ echo -e "\033[1;37m      【      Reseller : $(cat < /bin/ejecutar/menu_credi
 		esac
 		;;
 		3)
-[[ -e /root/name ]] && figlet -p -f smslant < /root/name | lolcat || echo -e "\033[7;49;35m    =====>>►► 🐲 New Phreaker56💥VPS 🐲 ◄◄<<=====      \033[0m"
+[[ -e /root/name ]] && figlet -p -f smslant < /root/name | lolcat || echo -e "\033[7;49;35m    =====>>►► 🐲 New Axel[VPS] 🐲 ◄◄<<=====      \033[0m"
 echo -e "\033[1;37m  【  ★ Reseller : $(cat < /bin/ejecutar/menu_credito) 2022 ★  】\033[0m"
 		echo -e "\033[1;37m      【    Escoje la Config a Mostrar    】\033[0m"
 		msg -bar
@@ -1012,7 +1012,7 @@ echo -e "\033[1;37m  【  ★ Reseller : $(cat < /bin/ejecutar/menu_credito) 202
 	;;
 	3)
 	clear
-	figlet -p -f slant Phreaker56
+	figlet -p -f slant Axel[VPS]
 	echo -e "${cor[2]} \033[1;32mFUNCION EN DISEÑO" $ppp
 	cambiopass
 	break;;
